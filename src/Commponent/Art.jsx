@@ -30,17 +30,17 @@ export default function Art(){
     return(
         <div className="h-fit w-full flex flex-col gap-11">
             {Art.map((pro,index)=>(
-        <div key={index} className="w-[85%] h-[90vh] flex bg-gray-100 mx-auto">
-            <div className="w-[55%] flex flex-col gap-5 p-12">
+        <div key={index} className="w-[85%] lg:h-[90vh] md:h-[110vh] h-fit lg:flex-row flex-col flex bg-gray-100 mx-auto">
+            <div className="lg:w-[55%] w-full flex flex-col gap-5 p-12">
             <h1 className="font-medium text-3xl">{pro.title}</h1>
             <p className="text-gray-500 font-medium w-[90%]">{pro.des}</p>
             <div className="w-full border-b border-gray-500 pb-2 my-3 flex justify-between items-center">
-                <span className="font-light text-xl">Location:</span>
-                <strong className="text-xl font-medium">{pro.sea}</strong>
+                <span className="font-light lg:text-xl text-sm">Location:</span>
+                <strong className="lg:text-xl text-sm font-medium">{pro.sea}</strong>
             </div>
             <div className="w-full border-b border-gray-500 pb-2 my-3 flex justify-between items-center">
-                <span className="font-light text-xl">Location:</span>
-                <strong className="text-xl font-medium">{pro.sea}</strong>
+                <span className="font-light lg:text-xl text-sm">Location:</span>
+                <strong className="lg:text-xl text-sm font-medium">{pro.sea}</strong>
             </div>
             <div className="w-full flex flex-wrap gap-5">
                 <li className=" list-inside font-medium text-md border rounded-full py-2 px-4">Comfortable</li>
@@ -49,14 +49,14 @@ export default function Art(){
                 <li className=" list-inside font-medium text-md border rounded-full py-2 px-4">Industrial</li>
                 <li className=" list-inside font-medium text-md border rounded-full py-2 px-4">Minimalist</li>
             </div>
-            <div className="flex my-8 gap-5 w-full">
+            <div className="flex my-8 gap-5 w-full flex-wrap">
                 <button className="py-2 px-6 flex justify-center items-center text-white rounded-full font-medium bg-black">{pro.btn1}<span class="material-symbols-outlined">
 arrow_forward
 </span></button>
                 <button className="py-2 px-4 rounded-full font-medium border">{pro.btn2}</button>
             </div>
             </div>
-            <div className="w-[50%] h-full overflow-hidden">
+            <div className="lg:w-[50%] w-full lg:h-full h-[50vh] overflow-hidden">
                 <img src={pro.img} className="h-full w-full hover:scale-125 transform-3d duration-700 transition-all" alt="" />
             </div>
         </div>

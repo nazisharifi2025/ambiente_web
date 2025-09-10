@@ -27,23 +27,23 @@ export default function AskedQu() {
     {
       question: "What is the payment process?",
       answer:
-        "We offer a comprehensive range of services designed to meet your specific needs. Our expertise includes architectural design, interior design, project management, and consultation. Whether you're starting a new project or enhancing an existing one, our team is here to guide you through every step, ensuring innovative solutions and exceptional results.",
+        "We typically work on a milestone-based payment system. A deposit is required upfront, followed by payments at key stages of the project.",
     },
     {
       question: "Do I need to hire an architect for my project?",
       answer:
-        "We offer a comprehensive range of services designed to meet your specific needs. Our expertise includes architectural design, interior design, project management, and consultation. Whether you're starting a new project or enhancing an existing one, our team is here to guide you through every step, ensuring innovative solutions and exceptional results.",
+        "Hiring an architect is recommended for complex projects. Our team includes experienced architects who can ensure compliance, functionality, and aesthetic appeal.",
     },
   ];
 
   return (
     <div>
-      <div className="w-[90%] mx-auto flex justify-between h-fit my-12 items-center">
-        <h1 className="font-medium text-5xl font-ply w-[80%]">
+      <div className="w-[90%] mx-auto flex lg:flex-row flex-col justify-between h-fit my-12 items-center">
+        <h1 className="font-medium lg:text-5xl md:text-3xl text-2xl lg:text-left text-center font-ply w-[80%]">
           Answers to Your Frequently Asked Questions
         </h1>
         <div className="flex flex-col gap-6 items-center">
-          <p className="text-gray-500 font-medium w-[90%]">
+          <p className="text-gray-500 font-medium w-[90%] lg:text-left text-center ">
             Discover our featured works showcasing our expertise and passion in
             every project. Let these stories inspire your next venture!
           </p>

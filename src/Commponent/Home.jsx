@@ -3,6 +3,7 @@ import AskedQu from "./AskedQu";
 import Disc from "./Disc";
 import Discover from "./Discover";
 import Essential from "./Essential";
+import Footer from "./Footer";
 import Header from "./Header";
 import Poritefoliom from "./Poretifoleom";
 import Project from "./Project";
@@ -22,7 +23,7 @@ export default function Home(){
             <Sliders/>
             <AskedQu/>
             <Project/>
-            
+            <Footer/>
         </div>
     )
 }

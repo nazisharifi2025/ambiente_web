@@ -21,12 +21,12 @@ export default function Poritefoliom(){
     ])
     return(
         <div className="w-[80%] my-12 mx-auto h-fit ">
-            <h1 className=" text-4xl font py-12 w-[50%]">See our portfolio for bold <span className="text-style-italic"> ideas and creative expertise</span></h1>
-            <div className="w-full gap-5 mx-auto h-fit flex justify-between items-center">
-            <div className="flex flex-col gap-4 h-[75vh] w-[45%] overflow-hidden">
+            <h1 className=" text-4xl font py-12 lg:w-[50%] w-full lg:text-left text-center">See our portfolio for bold <span className="text-style-italic"> ideas and creative expertise</span></h1>
+            <div className="w-full gap-5 mx-auto h-fit flex lg:flex-row flex-col justify-between items-center">
+            <div className="flex flex-col gap-4 lg:h-[75vh] md:h-[70vh] h-[50vh] lg:w-[45%] w-full overflow-hidden">
                 <img src="/image/a5.webp" className="h-full w-full hover:scale-200 transform-3d transition-all duration-700"  alt="" />
             </div>
-            <div className="w-1/2 flex flex-col justify-between gap-6 h-[75vh] ">
+            <div className="lg:w-1/2 w-[90%] flex flex-col  justify-between gap-6 lg:h-[75vh] h-[55vh] ">
             {pages.map((item,index)=>(
                 <div key={index} className="w-full">
                 <h1 className="font-bold font text-2xl">{item.title}</h1>

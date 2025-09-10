@@ -44,17 +44,17 @@ export default function Sliders(){
 
     return(
         // slider1
-        <div className="w-full h-full flex  justify-center items-center gap-12">
+        <div className="w-full h-full flex lg:flex-row flex-col justify-center items-center gap-12">
 <div className="h-12 w-full bg-white absolute bottom-0 left-0 bg-clip group-hover:h-20 z-10  group-hover:no-clip"></div>
             
             {/* button 2 endded */}
             {/* slide 1 */}
-        <div className="h-[70%] w-[50%] overflow-hidden">
+        <div className="h-[70%] lg:w-[50%] w-full overflow-hidden">
             <img src={Slider[curentindex].img} className="h-full w-full transition-transform duration-300 ease-in-out transform hover:scale-110" alt="" />
         </div>
         {/* slidr2 */}
         
-         <div className="h-[70%] w-[50%] overflow-hidden">
+         <div className="h-[70%] lg:w-[50%] w-full overflow-hidden">
             <img src={Slider2[indexfit].imge} className="h-full w-full transition-transform duration-300 ease-in-out transform hover:scale-110" alt="" />
         </div>
  
